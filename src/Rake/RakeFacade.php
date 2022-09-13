@@ -1,6 +1,6 @@
 <?php
 
-
+namespace TuanAnh\Rake;
 
 use Illuminate\Support\Facades\Facade;
 
