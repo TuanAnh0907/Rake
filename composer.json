@@ -47,7 +47,7 @@
         "TuanAnh\\Rake\\RakeServiceProvider"
       ],
       "aliases": {
-        "RakeAlgorithms": "TuanAnh\\Rake\\RakeFacade"
+        "Rake": "TuanAnh\\Rake\\RakeFacade"
       }
     }
   },
