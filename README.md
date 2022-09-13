@@ -1,8 +1,8 @@
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/tuananh0907/rake/tuananh/rake.svg?style=flat-square)](https://packagist.org/packages/tuananh0907/rake/tuananh/rake)
-[![Total Downloads](https://img.shields.io/packagist/dt/tuananh0907/rake/tuananh/rake.svg?style=flat-square)](https://packagist.org/packages/tuananh0907/rake/tuananh/rake)
-![GitHub Actions](https://github.com/tuananh0907/rake/tuananh/rake/actions/workflows/main.yml/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/doloan09/rake_algorithms.svg?style=flat-square)](https://packagist.org/packages/doloan09/rake_algorithms)
+[![Total Downloads](https://img.shields.io/packagist/dt/doloan09/rake_algorithms.svg?style=flat-square)](https://packagist.org/packages/doloan09/rake_algorithms)
+![GitHub Actions](https://github.com/doloan09/rake_algorithms/actions/workflows/main.yml/badge.svg)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
