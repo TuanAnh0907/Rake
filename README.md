@@ -11,7 +11,7 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require tuananh0907/rake/tuananh/rake
+composer require tuananh0907/rake
 ```
 
 ## Usage
