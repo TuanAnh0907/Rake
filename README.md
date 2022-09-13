@@ -14,11 +14,22 @@ You can install the package via composer:
 composer require tuananh0907/rake
 ```
 
+Or add the following code to file  **_composer.json_**
+
+     "require": {
+        ...
+        "tuananh0907/rake": "dev-main",
+        ...
+        }
+
+   After run terminal :
+    
+        composer update
+
 ## Usage
 
-```php
-// Usage description here
-```
+
+
 
 ### Testing
 
