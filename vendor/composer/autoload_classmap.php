@@ -879,7 +879,7 @@ return array(
     'TheSeer\\Tokenizer\\TokenCollectionException' => $vendorDir . '/theseer/tokenizer/src/TokenCollectionException.php',
     'TheSeer\\Tokenizer\\Tokenizer' => $vendorDir . '/theseer/tokenizer/src/Tokenizer.php',
     'TheSeer\\Tokenizer\\XMLSerializer' => $vendorDir . '/theseer/tokenizer/src/XMLSerializer.php',
-    'TuanAnh\\Rake\\Rake' => $baseDir . '/src/Rake/Rake.php',
-    'TuanAnh\\Rake\\RakeFacade' => $baseDir . '/src/Rake/RakeFacade.php',
-    'TuanAnh\\Rake\\RakeServiceProvide' => $baseDir . '/src/Rake/RakeServiceProvide.php',
+    'TuanAnh0907\\Rake\\Rake' => $baseDir . '/src/Rake/Rake.php',
+    'TuanAnh0907\\Rake\\RakeFacade' => $baseDir . '/src/Rake/RakeFacade.php',
+    'TuanAnh0907\\Rake\\RakeServiceProvide' => $baseDir . '/src/Rake/RakeServiceProvide.php',
 );

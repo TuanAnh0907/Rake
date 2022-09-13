@@ -17,8 +17,8 @@ class ComposerStaticInite02c14fa6c4a5bbaae03d79d9dcb16bc
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
-            'TuanAnh\\Rake\\Tests\\' => 19,
-            'TuanAnh\\' => 8,
+            'TuanAnh0907\\Rake\\Tests\\' => 23,
+            'TuanAnh0907\\' => 12,
         ),
         'P' => 
         array (
@@ -39,11 +39,11 @@ class ComposerStaticInite02c14fa6c4a5bbaae03d79d9dcb16bc
     );
 
     public static $prefixDirsPsr4 = array (
-        'TuanAnh\\Rake\\Tests\\' => 
+        'TuanAnh0907\\Rake\\Tests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/test',
         ),
-        'TuanAnh\\' => 
+        'TuanAnh0907\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -962,9 +962,9 @@ class ComposerStaticInite02c14fa6c4a5bbaae03d79d9dcb16bc
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
-        'TuanAnh\\Rake\\Rake' => __DIR__ . '/../..' . '/src/Rake/Rake.php',
-        'TuanAnh\\Rake\\RakeFacade' => __DIR__ . '/../..' . '/src/Rake/RakeFacade.php',
-        'TuanAnh\\Rake\\RakeServiceProvide' => __DIR__ . '/../..' . '/src/Rake/RakeServiceProvide.php',
+        'TuanAnh0907\\Rake\\Rake' => __DIR__ . '/../..' . '/src/Rake/Rake.php',
+        'TuanAnh0907\\Rake\\RakeFacade' => __DIR__ . '/../..' . '/src/Rake/RakeFacade.php',
+        'TuanAnh0907\\Rake\\RakeServiceProvide' => __DIR__ . '/../..' . '/src/Rake/RakeServiceProvide.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
