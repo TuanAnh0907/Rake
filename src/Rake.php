@@ -1,6 +1,6 @@
 <?php
 
-namespace TuanAnh0907\Rake;
+namespace TuanAnh0907;
 
 class Rake
 {

@@ -1,8 +1,10 @@
 <?php
 
-namespace TuanAnh0907\Rake;
+namespace TuanAnh0907;
 
 use Illuminate\Support\ServiceProvider;
+use Rake;
+use function TuanAnh0907\Rake\config_path;
 
 class RakeServiceProvide extends ServiceProvider
 {

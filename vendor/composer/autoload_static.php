@@ -962,9 +962,9 @@ class ComposerStaticInite02c14fa6c4a5bbaae03d79d9dcb16bc
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
-        'TuanAnh0907\\Rake\\Rake' => __DIR__ . '/../..' . '/src/Rake/Rake.php',
-        'TuanAnh0907\\Rake\\RakeFacade' => __DIR__ . '/../..' . '/src/Rake/RakeFacade.php',
-        'TuanAnh0907\\Rake\\RakeServiceProvide' => __DIR__ . '/../..' . '/src/Rake/RakeServiceProvide.php',
+        'TuanAnh0907\\Rake' => __DIR__ . '/../..' . '/src/Rake.php',
+        'TuanAnh0907\\RakeFacade' => __DIR__ . '/../..' . '/src/RakeFacade.php',
+        'TuanAnh0907\\RakeServiceProvide' => __DIR__ . '/../..' . '/src/RakeServiceProvide.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
