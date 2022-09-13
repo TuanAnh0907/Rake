@@ -26,13 +26,12 @@
 
   "autoload": {
     "psr-4": {
-      "TuanAnh\\": "src/"
+      "TuanAnh\\Rake\\": "src/"
     }
   },
-
   "autoload-dev": {
     "psr-4": {
-      "TuanAnh\\Rake\\Tests\\": "test"
+      "TuanAnh\\Rake\\": "Test"
     }
   },
 
