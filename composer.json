@@ -2,7 +2,7 @@
   "name": "tuananh0907/rake",
   "description": "Rake",
   "keywords": [
-    "tuananh",
+    "tuananh0907",
     "rake"
   ],
   "homepage": "https://github.com/TuanAnh0907/Rake",
@@ -26,12 +26,12 @@
 
   "autoload": {
     "psr-4": {
-      "TuanAnh\\Rake\\": "src/"
+      "TuanAnh0907\\Rake\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "TuanAnh\\Rake\\": "Test"
+      "TuanAnh0907\\Rake\\": "Test"
     }
   },
 
@@ -43,10 +43,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "TuanAnh\\Rake\\RakeServiceProvider"
+        "TuanAnh0907\\Rake\\RakeServiceProvide"
       ],
       "aliases": {
-        "Rake": "TuanAnh\\Rake\\RakeFacade"
+        "Rake": "TuanAnh0907\\Rake\\RakeFacade"
       }
     }
   },
