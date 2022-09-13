@@ -2,7 +2,7 @@
   "name": "tuananh0907/rake",
   "description": "Rake",
   "keywords": [
-    "tuananh0907",
+    "tuananh",
     "rake"
   ],
   "homepage": "https://github.com/TuanAnh0907/Rake",
@@ -43,7 +43,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "TuanAnh0907\\Rake\\RakeServiceProvider"
+        "TuanAnh\\Rake\\RakeServiceProvider"
       ],
       "aliases": {
         "Rake": "TuanAnh\\Rake\\RakeFacade"
