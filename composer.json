@@ -26,13 +26,13 @@
 
   "autoload": {
     "psr-4": {
-      "TuanAnh0907\\": "src/"
+      "TuanAnh\\": "src/"
     }
   },
 
   "autoload-dev": {
     "psr-4": {
-      "TuanAnh0907\\Rake\\Tests\\": "test"
+      "TuanAnh\\Rake\\Tests\\": "test"
     }
   },
 
@@ -47,7 +47,7 @@
         "TuanAnh0907\\Rake\\RakeServiceProvider"
       ],
       "aliases": {
-        "Rake": "TuanAnh0907\\Rake\\RakeFacade"
+        "Rake": "TuanAnh\\Rake\\RakeFacade"
       }
     }
   },

@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . './../vendor/autoload.php';
 
-use TuanAnh\Rake\Rake;
+use TuanAnh0907\Rake\Rake;
 
 $path = __DIR__ . '/../StopWords/stopword.json';
 $filename =  __DIR__ . '/../Documents/text.txt';
