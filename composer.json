@@ -26,13 +26,13 @@
 
   "autoload": {
     "psr-4": {
-      "TuanAnh\\": "src/"
+      "TuanAnh0907\\": "src/"
     }
   },
 
   "autoload-dev": {
     "psr-4": {
-      "TuanAnh\\Rake\\Tests\\": "test"
+      "TuanAnh0907\\Rake\\Tests\\": "test"
     }
   },
 
@@ -44,10 +44,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "TuanAnh\\Rake\\RakeServiceProvider"
+        "TuanAnh0907\\Rake\\RakeServiceProvider"
       ],
       "aliases": {
-        "Rake": "TuanAnh\\Rake\\RakeFacade"
+        "Rake": "TuanAnh0907\\Rake\\RakeFacade"
       }
     }
   },
