@@ -132,7 +132,7 @@ class Rake
             $score = 0;
 
             foreach ($words as $w) {
-                $score += $scores[$w]; // điểm của cụm từ cộng thêm điểm của từ lấy từ mảng điểm với key ! từ
+                $score += $scores[$w]; // điểm của cụm từ cộng thêm điểm của từ lấy từ mảng điểm với key ~ từ
             }
 
             $keywords[$phrases] = $score; // gán điểm cho phần tử key ~ cụm từ
