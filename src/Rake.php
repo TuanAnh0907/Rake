@@ -49,10 +49,12 @@ class Rake
         $phrases_arr = [];
 
         $regex = '/\b' . implode('\b|\b', $this->stopwords) . '\b/iu';
+//        var_dump($regex);
+//        die();
         foreach ($sentences as $sentence) {
             if (trim($sentence)) {
-                $phraseItem = preg_replace($regex, "|", mb_strtolower(trim($sentence)));
-                $phraseItem = explode("|", $phraseItem);
+                $phraseItem = preg_replace($regex, "|", mb_strtolower(trim($sentence))); // thay thế các từ dừng trong câu thành kí tự "|"
+                $phraseItem = explode("|", $phraseItem); // cắt câu thành mảng ngăn cách bởi "|"
                 foreach ($phraseItem as $item) {
                     if (trim($item)) {
                         if (!is_numeric($item)) {
@@ -70,7 +72,7 @@ class Rake
      */
     private static function split_phrase(string $phrase): array
     {
-        return explode(' ', $phrase);
+        return explode(' ', $phrase); // cắt cụm từ thành các từ bằng dấu space
     }
 
     /**
