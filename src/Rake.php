@@ -35,7 +35,7 @@ class Rake
 
     private function split_sentences()
     {
-        return preg_split('/[.?!,;\/\-"\'()\n\r\t]+/u', $this->paragraph);
+        return preg_split('/(\.\D|, |,| - |\n|\(|\)|\"|\/)+/u', $this->paragraph);
     }
 
     /**
