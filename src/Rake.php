@@ -33,7 +33,7 @@ class Rake
      * Split text into sentences with punctuation by special characters
      */
 
-    private function split_sentences()
+    public function split_sentences()
     {
         return preg_split('/(\.\D|, |,| - |\n|\(|\)|\"|\/)+/u', $this->paragraph);
     }
@@ -44,7 +44,7 @@ class Rake
      * @param array $sentences Array of sentences
      */
 
-    private function get_phrases(array $sentences = []): array
+    public function get_phrases(array $sentences = []): array
     {
         $phrases_arr = [];
 
@@ -70,7 +70,7 @@ class Rake
     /**
      * @param string $phrase Phrase to be split into words
      */
-    private static function split_phrase(string $phrase): array
+    public static function split_phrase(string $phrase): array
     {
         return explode(' ', $phrase); // cắt cụm từ thành các từ bằng dấu space
     }
@@ -81,7 +81,7 @@ class Rake
      * @param array $phrases_arr Array containing individual phrases
      */
 
-    private function get_scores(array $phrases_arr): array
+    public function get_scores(array $phrases_arr): array
     {
         $frequencies = []; // tần suất
         $degrees = []; // bậc
@@ -106,7 +106,7 @@ class Rake
             $degrees[$word] += $freq; // bậc phần tử key ~ từ cộng thêm tần suất
         }
 
-        $scores = array();
+        $scores = [];
 
         foreach ($frequencies as $word => $freq) {
             $scores[$word] = $scores[$word] ?? 0; // điểm của từ bằng 0 hoặc giữ nguyên nếu tồn tại trong mảng $scores[]
@@ -122,7 +122,7 @@ class Rake
      * @param array $phrases_arr Array of phrases (optimally) returned by get_phrases() method
      * @param array $scores Array of words and their scores returned by get_scores() method
      */
-    private function get_keywords(array $phrases_arr, array $scores): array
+    public function get_keywords(array $phrases_arr, array $scores): array
     {
         $keywords = [];
 
