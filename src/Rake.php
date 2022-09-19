@@ -53,8 +53,8 @@ class Rake
 //        die();
         foreach ($sentences as $sentence) {
             if (trim($sentence)) {
-                $phraseItem = preg_replace($regex, "|", mb_strtolower(trim($sentence))); // thay thế các từ dừng trong câu thành kí tự "|"
-                $phraseItem = explode("|", $phraseItem); // cắt câu thành mảng ngăn cách bởi "|"
+                $phraseItem = preg_replace($regex, "|", mb_strtolower(trim($sentence)));
+                $phraseItem = explode("|", $phraseItem); 
                 foreach ($phraseItem as $item) {
                     if (trim($item)) {
                         if (!is_numeric($item)) {
@@ -72,7 +72,7 @@ class Rake
      */
     public static function split_phrase(string $phrase): array
     {
-        return explode(' ', $phrase); // cắt cụm từ thành các từ bằng dấu space
+        return explode(' ', $phrase); 
     }
 
     /**
@@ -88,29 +88,28 @@ class Rake
 
         foreach ($phrases_arr as $p) {
 
-            $words = self::split_phrase($p); // tách cụm từ thành mảng các từ
-            $words_count = count($words); // đếm số lượng từ trong cụm
-            $words_degree = $words_count - 1; // bậc của cụm từ bằng sl trừ 1
+            $words = self::split_phrase($p); 
+            $words_count = count($words); 
+            $words_degree = $words_count - 1;
 
             foreach ($words as $w) {
-                $frequencies[$w] = $frequencies[$w] ?? 0; // giá trị tần suất của phần tử trong mảng $frequencies[] có key ~ từ bằng 0 hoặc giữ nguyên nếu tồn tại
-                ++$frequencies[$w]; // tăng giá trị của phần tử key bằng từ lên 1
-                $degrees[$w] = $degrees[$w] ?? 0; // kiểm tra trong mảng $degrees[] có phần tử key ~ từ ko, = 0 hoặc giữ nguyên nếu tồn tại
-                $degrees[$w] += $words_degree; // bậc của key ~ từ : cộng thêm bậc của cụm từ vào giá trị ban đầu
-
+                $frequencies[$w] = $frequencies[$w] ?? 0;
+                ++$frequencies[$w]; 
+                $degrees[$w] = $degrees[$w] ?? 0;
+                $degrees[$w] += $words_degree; 
             }
 
         }
 
         foreach ($frequencies as $word => $freq) {
-            $degrees[$word] += $freq; // bậc phần tử key ~ từ cộng thêm tần suất
+            $degrees[$word] += $freq;
         }
 
         $scores = [];
 
         foreach ($frequencies as $word => $freq) {
-            $scores[$word] = $scores[$word] ?? 0; // điểm của từ bằng 0 hoặc giữ nguyên nếu tồn tại trong mảng $scores[]
-            $scores[$word] = $degrees[$word] / (float)$freq;  // điểm của từ bằng bậc chia tần suất
+            $scores[$word] = $scores[$word] ?? 0; 
+            $scores[$word] = $degrees[$word] / (float)$freq;  
         }
 
         return $scores;
@@ -127,15 +126,15 @@ class Rake
         $keywords = [];
 
         foreach ($phrases_arr as $phrases) {
-            $keywords[$phrases] = $keywords[$phrases] ?? 0; // phần tử key ~ cụm từ bằng 0 hoặc giữ nguyên nếu tồn tại
-            $words = self::split_phrase($phrases); // cắt cụm từ thành mảng các từ
+            $keywords[$phrases] = $keywords[$phrases] ?? 0; 
+            $words = self::split_phrase($phrases); 
             $score = 0;
 
             foreach ($words as $w) {
-                $score += $scores[$w]; // điểm của cụm từ cộng thêm điểm của từ lấy từ mảng điểm với key ~ từ
+                $score += $scores[$w]; 
             }
 
-            $keywords[$phrases] = $score; // gán điểm cho phần tử key ~ cụm từ
+            $keywords[$phrases] = $score; 
         }
 
         return $keywords;
