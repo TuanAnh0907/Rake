@@ -3,8 +3,8 @@ require __DIR__ . './../vendor/autoload.php';
 
 use TuanAnh0907\Rake\Rake;
 
-$path = __DIR__ . '/../StopWords/stopword.json';
-$filename = __DIR__ . '/../Documents/text.txt';
+$path = __DIR__ . '/../asset/StopWords/stopword.json';
+$filename = __DIR__ . '/../asset/Documents/text.txt';
 
 function loadStopwords($stopwords_file)
 {
